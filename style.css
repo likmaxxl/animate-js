@@ -1,0 +1,152 @@
+body {
+  background-color: #D4D4D4;
+}
+
+.zavesa1 {
+  transition: all 1s;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: black;
+  z-index: 100;
+  animation-name: myanim;
+  animation-duration: 2s;
+}
+
+@keyframes myanim {
+  0% {
+    bottom: 3000px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.bx {
+  width: 100%;
+}
+
+.slika {
+  width: 350px;
+}
+
+.slika1 {
+  animation-name: myanim2;
+  animation-duration: 10s;
+  width: 30%;
+}
+
+.slika1 img {
+  width: 350px;
+}
+
+@keyframes myanim2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-90deg);
+    margin-left: 210px;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    margin-left: 0;
+  }
+}
+
+.slika img {
+  width: 100%;
+}
+
+.line {
+  position: absolute;
+  z-index: -1;
+  top: 92px;
+  left: 543px;
+}
+
+.line img {
+  width: 400px;
+}
+
+.switch {
+  position: relative;
+}
+
+.switch1 {
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  background: red;
+  position: relative;
+  left: 899px;
+  top: -231px;
+}
+
+.s1 {
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  width: 50%;
+  background: black;
+  height: 30px;
+}
+
+.s2 {
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  width: 50%;
+  background: black;
+  height: 30px;
+  animation-name: myanim3;
+  animation-duration: 4s;
+}
+
+@keyframes myanim3 {
+  0% {
+    margin-left: 0;
+    background: rgb(50, 0, 144);
+    box-shadow: 10px 10px 100px rgb(50, 0, 144);
+    transform: rotate(0deg);
+  }
+
+  25% {
+    margin-right: 10px;
+    color: black;
+    background: rgb(239, 240, 236);
+    box-shadow: 10px 10px 100px rgb(239, 240, 236);
+    transform: rotate(30deg);
+  }
+
+  50% {
+    font-size: 20px;
+    margin-right: 10px;
+    background: rgb(10, 187, 241);
+    box-shadow: 10px 10px 100px rgb(10, 187, 241);
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-50deg);
+    margin-left: 3px;
+    color: black;
+    background: green;
+    box-shadow: 10px 10px 100px green;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    background: purple;
+    box-shadow: 10px 10px 100px purple;
+  }
+}
+
+p {
+  margin-top: 50px;
+}
